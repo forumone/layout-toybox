@@ -1,0 +1,14 @@
+uuid: 084c6c58-2f7e-4119-9cb9-01f61fbccca5
+name: Sandbox
+mail: azinck@forumone.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
