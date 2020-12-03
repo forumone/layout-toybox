@@ -1,0 +1,21 @@
+{
+  "generator-web-starter": {
+    "promptValues": {
+      "name": "layout-toybox",
+      "platform": "Docker",
+      "dockerCms": "Drupal8",
+      "dockerSearch": "Elasticsearch",
+      "dockerCache": "Memcache",
+      "documentRoot": "public",
+      "useGesso": true,
+      "useCapistrano": true,
+      "shouldInstallDrupal": true,
+      "esTag": "aws-7.8",
+      "gessoShouldInstall": true,
+      "capistranoDeployMethod": "rsync",
+      "capistranoReleases": 3,
+      "capistranoRepository": ""
+    },
+    "projectName": "layout-toybox"
+  }
+}

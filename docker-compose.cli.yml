@@ -1,0 +1,33 @@
+# This is the Compose file for command-line services.
+# Anything that doesn't need to be run as part of the main `docker-compose up'
+# command should reside in here and be invoked by a helper script.
+version: "3.7"
+services:
+  drush:
+    build: ./services/drush
+    entrypoint:
+      - /var/www/html/vendor/bin/drush
+    working_dir: /var/www/html/public
+    volumes:
+      - ./services/drupal:/var/www/html:cached
+      - type: volume
+        source: fs-data
+        target: /var/www/html/public/sites/default/files
+  composer:
+    image: forumone/composer:1.9
+    volumes:
+      - ./services/drupal:/app:cached
+  gesso:
+    build: ./services/drupal/public/themes/gesso
+    init: true
+    volumes:
+      - ./services/drupal/public/themes/gesso/images:/app/images:cached
+      - ./services/drupal/public/themes/gesso/js:/app/js:cached
+      - ./services/drupal/public/themes/gesso/source:/app/source:cached
+      - type: volume
+        source: gesso-pattern-lab
+        target: /app/pattern-lab
+      - type: volume
+        source: gesso-css
+        target: /app/css
+volumes: {}
