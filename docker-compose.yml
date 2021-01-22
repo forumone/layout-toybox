@@ -84,7 +84,7 @@ services:
     ports:
       - 8025:8025
   elasticsearch:
-    image: forumone/elasticsearch-oss:aws-7.8
+    image: elasticsearch:7.8.1
     ulimits:
       memlock:
         soft: -1
