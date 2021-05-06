@@ -96,6 +96,11 @@
             "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Installing from existing config with a theme that declares module dependencies fails": "https://www.drupal.org/files/issues/2021-05-03/fix_ConfigImportSubscriber_validateThemes-3176625-24.patch"
+            }
         }
     }
 }
