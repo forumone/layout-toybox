@@ -6,7 +6,7 @@ FROM forumone/drupal8:7.4 AS base
 
 RUN f1-ext-install pecl:memcached
 
-FROM forumone/composer:1.9 AS composer
+FROM composer:2 AS composer
 
 COPY ["scripts", "scripts"]
 

@@ -14,7 +14,7 @@ services:
         source: fs-data
         target: /var/www/html/public/sites/default/files
   composer:
-    image: forumone/composer:1.9
+    image: composer:2
     volumes:
       - ./services/drupal:/app:cached
   gesso:
