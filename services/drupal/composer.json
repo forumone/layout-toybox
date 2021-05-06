@@ -22,6 +22,7 @@
         "drupal/admin_toolbar": "^2.4",
         "drupal/ckeditor_entity_link": "^1.2",
         "drupal/components": "^2.0",
+        "drupal/core-composer-scaffold": "~9.1.0",
         "drupal/core-recommended": "~9.1.0",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^2.8",
